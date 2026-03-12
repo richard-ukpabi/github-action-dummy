@@ -21,7 +21,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # Step 1 — Show environment variables
+    # Step 1 - Show environment variables
     - name: Show environment variables
       run: |
         echo "GLOBAL_ENV = $GLOBAL_ENV"
@@ -29,27 +29,27 @@ jobs:
       env:
         LOCAL_ENV: "I am a step-level env var"
 
-    # Step 2 — Use a secret
+    # Step 2 - Use a secret
     - name: Show secret (masked)
       run: echo "Secret value is: ${{ secrets.DEMO_SECRET }}"
 
-    # Step 3 — Dummy build step with output
+    # Step 3 - Dummy build step with output
     - id: build-step
       name: Dummy build
       run: |
         echo "Running dummy build..."
         echo "::set-output name=buildMessage::Build completed successfully"
 
-    # Step 4 — Dummy test step
+    # Step 4 - Dummy test step
     - name: Dummy tests
       run: npm test
 
-    # Step 5 — Conditional execution
+    # Step 5 - Conditional execution
     - name: Run only if build output contains 'successfully'
       if: contains(steps.build-step.outputs.buildMessage, 'successfully')
       run: echo "Conditional step executed because build succeeded!"
 
-    # Step 6 — Use output from build step
+    # Step 6 - Use output from build step
     - name: Show build output
       run: echo "Build step said: ${{ steps.build-step.outputs.buildMessage }}"
 
