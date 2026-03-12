@@ -1,0 +1,8 @@
+{
+  "name": "dummy-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Running dummy build...'",
+    "test": "echo 'Running dummy tests...' && exit 0"
+  }
+}
