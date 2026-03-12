@@ -38,7 +38,8 @@ jobs:
       name: Dummy build
       run: |
         echo "Running dummy build..."
-        echo "::set-output name=buildMessage::Build completed successfully"
+        #echo "::set-output name=buildMessage::Build completed successfully"
+        echo "buildMessage=Build completed successfully" >> $GITHUB_OUTPUT
 
     # Step 4 - Dummy test step
     - name: Dummy tests
