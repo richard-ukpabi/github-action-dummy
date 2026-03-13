@@ -243,4 +243,31 @@ This says that if the build output contains successful, proceed to echo the mess
 
 6. The output from the input is seen below
 
-![output](./img/output.png) This will output the build message.
+![output](./img/output.png) This will output the build message..
+
+Checking the output of our file, we have the below
+![ran job](./img/job%20successful%20ran.png)
+
+- Verfiying our environment 
+
+![env variable](./img/variables.png)
+
+-verifying secret
+
+![secret](./img/encoded%20secret.png)
+The secret is encoded as expected.
+
+- verfying condition set
+
+![condition](./img/condition2.png)
+
+it ran because of the stated condition of success.
+
+- verifying out 
+
+![output](./img/completed%20output.png)
+
+This line of code has outputted the input.
+
+End of project work.
+
