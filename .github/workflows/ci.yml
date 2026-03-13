@@ -1,10 +1,5 @@
 name: Demo CI Pipeline
 
-# Default working directory so CI runs inside my-app/
-defaults:
-  run:
-    working-directory: my-app
-
 # Workflow-level environment variables
 env:
   GLOBAL_ENV: "I am a global environment variable, that is why am i here"
