@@ -7,7 +7,7 @@ defaults:
 
 # Workflow-level environment variables
 env:
-  GLOBAL_ENV: "I am a global environment variable"
+  GLOBAL_ENV: "I am a global environment variable, that is why am i here"
 
 on:
   push:
