@@ -31,7 +31,8 @@ jobs:
 
     # Step 2 - Use a secret
     - name: Show secret (masked)
-      run: echo "Secret value is: ${{ secrets.DEMO_SECRET }}"
+      run: |
+        echo "Secret value is: ${{ secrets.DEMO_SECRET }}"
 
     # Step 3 - Dummy build step with output
     - id: build-step
